@@ -1,7 +1,41 @@
 # KaliTools-tips
 MY collection of commands to different tools in Kali Linux on my journey to learn it and try to hack tryhackme.com
 
+## LINUX
+update everything
+```
+sudo apt update --> sudo apt upgrade
+```
+move in terminal
+```
+cd +
+/ = root
+.. = one dir back
+- = previous dir
+```
+make files
+```
+touch filename
+cat >> filename
+echo "yourtexthere" > filename
+nano filename || will open the nano text editor
+```
+make a dir
+```
+mkdir dirname
+```
+remove
+```
+rm || removes files
+rmdir || removes a dir
+rmdir -r || empties a dir and deletes it
+```
 
+## SSH
+Make a connection
+```
+ssh user@ipofuser || will ask for a password
+```
 
 ## NMAP
 Basic scan to file
@@ -29,10 +63,15 @@ Set RHOSTS globally
 ```
 setg RHOSTS <ip>
 ```
-
-Search module 
+Set LHOSTS
+```
+set LHOSTS <yourownip>
+```
+Search module, payload for it & set
 ```
 search <module>
+show payloads
+set PAYLOAD payload/path
 ```  
 
 ## Hashcat
