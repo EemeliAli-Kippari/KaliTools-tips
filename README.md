@@ -3,3 +3,7 @@ MY collection of commands to different tools in Kali Linux on my journey to lear
 
 
 
+# NMAP
+Basic scan to file
+
+sudo nmap -sV --script vuln <ip> -o nmap.txt
