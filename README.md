@@ -48,7 +48,10 @@ Intialize database
 ```
 msfdb init
 ```
-
+Update
+```
+msfupdate
+```
 Check connection to db
 ```
 db_status
