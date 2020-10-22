@@ -52,6 +52,16 @@ Basic scan to file
 ```
 sudo nmap -sV --script vuln <ip> -o nmap.txt
 ```
+## BINWALK
+```
+binwalk <filename> <filename> || opens files if they contain something
+-e || extract known filetypes
+-M || recursive scan
+```
+## STEGHIDE
+```
+steghide --info -p || display info and p for password
+```
 
 ## Metasploit
 Intialize database 
