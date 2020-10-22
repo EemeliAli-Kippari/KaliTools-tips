@@ -30,7 +30,15 @@ rm || removes files
 rmdir || removes a dir
 rmdir -r || empties a dir and deletes it
 ```
-
+Download from internet
+```
+wget url || when downloading code from github use the "raw" page
+```
+Download/Send files from/to through SSH
+```
+scp user@userip:/from_dir/file /to_dir || download from another user
+scp file.txt remote_username@10.10.0.2:/remote/directory || send file file.txt
+```
 ## SSH
 Make a connection
 ```
