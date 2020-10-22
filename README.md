@@ -24,6 +24,10 @@ make a dir
 ```
 mkdir dirname
 ```
+move files
+```
+mv file /destination
+```
 remove
 ```
 rm || removes files
