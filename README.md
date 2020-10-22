@@ -116,7 +116,7 @@ hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> <ftp/ssh>
 ## Gobuster
 Basic directory scan
 ```
-gobuster dir -o gobuster.txt -u <url> -w <path-to-wordlist>
+gobuster dir -o gobuster.txt -u <url> -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt
 ```
 
 ## Priviledge escalation
