@@ -13,26 +13,18 @@ cd +
 .. = one dir back
 - = previous dir
 ```
-make files
+files/dirs
 ```
-touch filename
-cat >> filename
-echo "yourtexthere" > filename
-nano filename || will open the nano text editor
-```
-make a dir
-```
-mkdir dirname
-```
-move files
-```
-mv file /destination
-```
-remove
-```
+mv file /destination || move around
+mv oldname newname || rename
 rm || removes files
 rmdir || removes a dir
 rmdir -r || empties a dir and deletes it
+touch filename || make file
+cat >> filename || make file
+echo "yourtexthere" > filename || make file
+nano filename || will open the nano text editor
+mkdir dirname
 ```
 Download from internet
 ```
