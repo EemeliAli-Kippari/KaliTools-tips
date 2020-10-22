@@ -122,7 +122,7 @@ sudo john --show <hash-file>
 ## Hydra
 Crack FTP login
 ``` 
-hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> <ftp/ssh>
+hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> <ftp/ssh> || uppercase letter for the option you want to crack
 ``` 
 
 ## Gobuster
