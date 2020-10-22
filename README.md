@@ -40,6 +40,12 @@ Make a connection
 ```
 ssh user@ipofuser || will ask for a password
 ```
+## FTP
+make a connection
+
+ftp <ip> || asks for user and password
+get <filename>/* || downloads files
+bye 
 
 ## NMAP
 Basic scan to file
