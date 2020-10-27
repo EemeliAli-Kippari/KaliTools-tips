@@ -121,13 +121,21 @@ sudo john --show <hash-file>
 
 ## Hydra
 Crack FTP/SSH/login form and various other protocols
+
+SSH
 ``` 
-hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> ssh -o<filename> || uppercase letter for the option you want to crack. SSH at the end for SSH cracking
-hydra -l user -P p<path to wordlist> ftp://<ip> || for FTP cracking
-hydra -l <username> -P <path to wordlist> <ip> http-post-form "/login:username=^USER^&password=^PASS^:F=<wrong psswd msg>" -V -o <filename> || verbose brute force a POST login form
+hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> ssh -o<filename>
+```
+FTP
+```
+hydra -l user -P p<path to wordlist> ftp://<ip>
+```
+Web login
+```
+hydra -l <username> -P <path to wordlist> <ip> http-post-form "/login:username=^USER^&password=^PASS^:F=<wrong psswd msg>" -V -o <filename>
+```
 
 More info: https://tryhackme.com/room/hydra
-``` 
 
 ## Gobuster
 Basic directory scan
