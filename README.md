@@ -122,7 +122,7 @@ sudo john --show <hash-file>
 ## Hydra
 Crack FTP/SSH/login form and various other protocols
 ``` 
-hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> ssh || uppercase letter for the option you want to crack. SSH at the end for SSH cracking
+hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> ssh -o<filename> || uppercase letter for the option you want to crack. SSH at the end for SSH cracking
 hydra -l user -P p<path to wordlist> ftp://<ip> || for FTP cracking
 hydra -l <username> -P <path to wordlist> <ip> http-post-form "/login:username=^USER^&password=^PASS^:F=<wrong psswd msg>" -V -o <filename> || verbose brute force a POST login form
 
