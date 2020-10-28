@@ -60,7 +60,8 @@ binwalk <filename> <filename> || opens files if they contain something
 ```
 ## STEGHIDE
 ```
-steghide --info -p || display info and p for password
+steghide --info -p <filename> || display info and p for password
+steghide extract -sf tryhackme.jpeg || extracts data inside
 ```
 
 ## Metasploit
@@ -111,13 +112,14 @@ hashcat --username --show -a 0 -m 0 <hash-file> <path-to-wordlist>
 ## John the ripper
 Crack hash
 ```
-sudo john <hash-file>
+sudo john --wordlist=/usr/share/wordlists/rockyou.txt <hashedfile> || first make a hashed file using zip2john
 ```  
 
 Show earlier cracked
 ```
 sudo john --show <hash-file>
-```  
+``` 
+
 
 ## Hydra
 Crack FTP/SSH/login form and various other protocols
