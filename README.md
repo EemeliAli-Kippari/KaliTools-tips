@@ -19,7 +19,6 @@ mv file /destination || move around
 mv oldname newname || rename
 rm || removes files
 rmdir || removes a dir
-rmdir -r || empties a dir and deletes it
 touch filename || make file
 cat >> filename || make file
 echo "yourtexthere" > filename || make file
@@ -38,7 +37,7 @@ scp file.txt remote_username@10.10.0.2:/remote/directory || send file file.txt
 ## SSH
 Make a connection
 ```
-ssh user@ipofuser || will ask for a password
+ssh user@ipofuser -p <port>|| will ask for a password
 ```
 ## FTP
 make a connection
@@ -50,7 +49,7 @@ bye
 ## NMAP
 Basic scan to file
 ```
-sudo nmap -sV --script vuln <ip> -o nmap.txt
+sudo nmap -sV -sC -O --script vuln <ip> -o nmap.txt || -sV probes ports, vuln finds vulnerabilities,-O for OS, -p to specify port ranges, sC default scripts
 ```
 ## BINWALK
 ```
@@ -148,5 +147,5 @@ gobuster dir -o gobuster.txt -u <url> -w /usr/share/wordlists/dirbuster/director
 ## Priviledge escalation
 Find suid programs
 ```
-find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null
+find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null || "2>/dev/null" = errors do not show
 ```
