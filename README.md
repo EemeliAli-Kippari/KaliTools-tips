@@ -68,20 +68,14 @@ Intialize database
 ```
 msfdb init
 ```
-Update
+Start msf 
 ```
-msfupdate
+msfconsole
 ```
 Check connection to db
 ```
 db_status
 ```
-
-Start msf 
-```
-msfconsole
-```
-
 Set RHOSTS globally
 ```
 setg RHOSTS <ip>
