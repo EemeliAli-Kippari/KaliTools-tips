@@ -143,7 +143,7 @@ More info: https://tryhackme.com/room/hydra
 ## Gobuster
 Basic directory scan
 ```
-gobuster dir -o gobuster.txt -u <url> -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt
+gobuster dir -o gobuster.txt -t 30 -u <url> -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt
 ```
 
 ## Priviledge escalation
