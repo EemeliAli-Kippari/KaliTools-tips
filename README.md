@@ -51,6 +51,14 @@ Basic scan to file
 ```
 sudo nmap -sV -sC -O --script vuln <ip> -o nmap.txt || -sV probes ports, vuln finds vulnerabilities,-O for OS, -p to specify port ranges, sC default scripts
 ```
+## MASSCAN
+Installation to masscan/bin
+```
+sudo apt-get install git gcc make libpcap-dev
+git clone https://github.com/robertdavidgraham/masscan
+cd masscan
+make
+```
 ## BINWALK
 ```
 binwalk <filename> <filename> || opens files if they contain something
