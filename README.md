@@ -151,3 +151,12 @@ Find suid programs
 ```
 find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null || "2>/dev/null" = errors do not show
 ```
+## Python
+Turn a crappy reverse shell or similar into a better one
+```
+python -c 'import pty;pty.spawn("/bin/bash")'
+```
+Really simple http server on port 8K
+```
+python -m SimpleHTTPServer
+```
