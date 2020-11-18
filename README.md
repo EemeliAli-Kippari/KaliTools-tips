@@ -98,6 +98,12 @@ search <module>
 show payloads
 set PAYLOAD payload/path
 ```  
+Upgrade meterpreter shell
+```  
+shell
+script -qc /bin/bash /dev/null
+```  
+
 
 ## Hashcat
 Crack MD5 hash with username (username: hash)
