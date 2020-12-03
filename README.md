@@ -168,3 +168,8 @@ python -m SimpleHTTPServer
 ```
 ## MySQL
 Cheatsheet at: https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3
+## PHP
+Reverse shell at
+```
+/usr/share/webshells/php/php-reverse-shell.php
+```
