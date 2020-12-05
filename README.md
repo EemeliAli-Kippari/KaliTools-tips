@@ -151,7 +151,11 @@ Basic directory scan
 ```
 gobuster dir -o gobuster.txt -t 30 -u <url> -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt
 ```
-
+## WFUZZ
+Fuzz directories, variables, file types...
+```
+wfuzz -c -z file,<wordlist> http://example.com/FUZZ || variable=FUZZ works as well
+```
 ## Priviledge escalation
 Find suid programs
 ```
