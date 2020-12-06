@@ -172,6 +172,13 @@ python -m SimpleHTTPServer
 ```
 ## MySQL
 Cheatsheet at: https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3
+SQLmap
+```
+sqlmap -u <url> --batch --dbms <db_type> || basic scan
+```
+--dump =     Dump the data within the database that the application uses
+--dump-all = Dump the ENTIRE database
+
 ## PHP
 Reverse shell at
 ```
