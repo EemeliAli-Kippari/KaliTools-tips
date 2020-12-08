@@ -34,6 +34,11 @@ Download/Send files from/to through SSH
 scp user@userip:/from_dir/file /to_dir || download from another user
 scp file.txt remote_username@10.10.0.2:/remote/directory || send file file.txt
 ```
+## NetCat
+Listen on port 1234 at tun0 ip
+```
+nc -lkvnp 1234
+```
 ## SSH
 Make a connection
 ```
