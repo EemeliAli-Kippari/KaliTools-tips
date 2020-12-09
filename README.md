@@ -54,7 +54,7 @@ bye
 ## NMAP
 Basic scan to file
 ```
-sudo nmap -sV -sC -O --script vuln <ip> -o nmap.txt || -sV probes ports, vuln finds vulnerabilities,-O for OS, -p to specify port ranges, sC default scripts
+sudo nmap -sV -O --script vuln <ip> -o nmap.txt || -sV probes ports, vuln finds vulnerabilities,-O for OS, -p to specify port ranges, sC default scripts
 ```
 ## MASSCAN
 Installation to masscan/bin
