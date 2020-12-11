@@ -49,6 +49,7 @@ make a connection
 ```
 ftp <ip> || asks for user and password
 get <filename>/* || downloads files
+put <filename> || upload files
 bye 
 ```
 ## NMAP
@@ -146,7 +147,7 @@ hydra -l user -P p<path to wordlist> ftp://<ip>
 ```
 Web login
 ```
-hydra -l <username> -P <path to wordlist> <ip> http-post-form "/login:username=^USER^&password=^PASS^:F=<wrong psswd msg>" -V -o <filename>
+hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> http-post-form "/login:username=^USER^&password=^PASS^:F=<wrong psswd msg>" -V -o <filename>
 ```
 
 More info: https://tryhackme.com/room/hydra
