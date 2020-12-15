@@ -5,6 +5,7 @@ MY collection of commands to different tools in Kali Linux on my journey to lear
 update everything
 ```
 sudo apt update --> sudo apt upgrade
+sudo apt-get dist-upgrade || if backages are kept back
 ```
 move in terminal
 ```
