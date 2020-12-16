@@ -150,7 +150,10 @@ Web login
 ```
 hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> http-post-form "/login:username=^USER^&password=^PASS^:F=<wrong psswd msg>" -V -o <filename>
 ```
-
+SQL
+```
+hydra -L usernames.txt -P /usr/share/wordlists/rockyou.txt <ip>  mysql -s <port> -f
+```
 More info: https://tryhackme.com/room/hydra
 
 ## Gobuster
