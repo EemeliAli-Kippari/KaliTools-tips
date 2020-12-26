@@ -161,6 +161,10 @@ Basic directory scan
 ```
 gobuster dir -o gobuster.txt -t 30 -u <url> -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt
 ```
+File search
+```
+gobuster dir -u <url> -x php -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt -o gobuster.txt  
+```
 ## WFUZZ
 Fuzz directories, variables, file types...
 ```
