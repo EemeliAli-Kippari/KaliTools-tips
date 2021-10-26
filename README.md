@@ -45,6 +45,13 @@ Make a connection
 ```
 ssh user@ipofuser -p <port>|| will ask for a password
 ```
+Good to know
+```
+-i option gives the identity file, used for example to sign in using SSH keys
+```
+```
+id_rsa and id_rsa.pub are default names of SSH private- and public keys
+```
 ## FTP
 make a connection
 ```
