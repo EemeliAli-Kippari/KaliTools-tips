@@ -47,7 +47,7 @@ ssh user@ipofuser -p <port>|| will ask for a password
 ```
 Good to know
 ```
--i option gives the identity file, used for example to sign in using SSH keys
+-i [file] option gives the identity file, used for example to sign in using SSH keys
 ```
 ```
 id_rsa and id_rsa.pub are default names of SSH private- and public keys
@@ -63,7 +63,7 @@ bye
 ## NMAP
 Basic scan to file
 ```
-sudo nmap -sV -O --script vuln <ip> -o nmap.txt || -sV probes ports, vuln finds vulnerabilities,-O for OS, -p to specify port ranges, sC default scripts
+sudo nmap -sV -O --script vuln <ip> -oN nmap.txt || -sV probes ports, vuln finds vulnerabilities,-O for OS, -p to specify port ranges, sC default scripts, -A for OS detection, version detection, script scanning, and traceroute, -p- for all ports
 ```
 ## MASSCAN
 Installation to masscan/bin
@@ -145,6 +145,13 @@ sudo john --show <hash-file>
 ## Hydra
 Crack FTP/SSH/login form and various other protocols
 
+Options
+```
+-t number of paraller connections
+-l user
+-P password path
+```
+
 SSH
 ``` 
 hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> ssh -o<filename>
@@ -204,4 +211,14 @@ sqlmap -u <url> --batch --dbms <db_type> || basic scan
 Reverse shell at
 ```
 /usr/share/webshells/php/php-reverse-shell.php
+```
+
+## NFS
+Mount a NFS share to tmp
+```
+sudo mount -t nfs [IP]:[share name] /tmp/mount/ -nolock || mounting needs to be done to access a nfs share
+```
+Find out a name of a nfs share
+```
+/usr/sbin/showmount -e [IP]  || find out a name of a nfs share
 ```
