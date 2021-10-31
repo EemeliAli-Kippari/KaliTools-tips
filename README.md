@@ -35,6 +35,12 @@ Download/Send files from/to through SSH
 scp user@userip:/from_dir/file /to_dir || download from another user
 scp file.txt remote_username@10.10.0.2:/remote/directory || send file file.txt
 ```
+Grep
+```
+grep "[word]" [file] || search a line in a file with the [word] in it
+-v || invert the results = show everything but the matches
+-r || search recursively
+```
 ## NetCat
 Listen on port 1234 at tun0 ip
 ```
@@ -198,12 +204,17 @@ Really simple http server on port 8K
 ```
 python -m SimpleHTTPServer
 ```
-## MySQL
+## SQL
 Cheatsheet at: https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3
+MySQL versions 5.X and earlier are suspectible to user account and table enumeration. Metasploit has mysql_sql module with "show databases" sql option.
+
+MYSQL
+```
+mysql -h [IPaddress] -u [username] -p || asks fro password
+```
 SQLmap
 ```
 sqlmap -u <url> --batch --dbms <db_type> || basic scan
--h [IP address]
 ```
 --dump =     Dump the data within the database that the application uses
 --dump-all = Dump the ENTIRE database
