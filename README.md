@@ -203,6 +203,7 @@ Cheatsheet at: https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e309
 SQLmap
 ```
 sqlmap -u <url> --batch --dbms <db_type> || basic scan
+-h [IP address]
 ```
 --dump =     Dump the data within the database that the application uses
 --dump-all = Dump the ENTIRE database
