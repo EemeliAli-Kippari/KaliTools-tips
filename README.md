@@ -25,6 +25,7 @@ cat >> filename || make file
 echo "yourtexthere" > filename || make file
 nano filename || will open the nano text editor
 mkdir dirname
+dpkg -i [file] || dpkg is a tool to install, build, remove and manage Debian package. -i = install
 ```
 Download from internet
 ```
@@ -45,6 +46,11 @@ grep "[word]" [file] || search a line in a file with the [word] in it
 Listen on port 1234 at tun0 ip
 ```
 nc -lkvnp 1234
+```
+##Nessus
+```
+sudo /bin/systemctl start nessusd.service || start nessus
+localhost:8834 || user interface
 ```
 ## SSH
 Make a connection
