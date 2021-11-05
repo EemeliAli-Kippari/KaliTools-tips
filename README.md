@@ -240,3 +240,9 @@ Find out a name of a nfs share
 ```
 /usr/sbin/showmount -e [IP]  || find out a name of a nfs share
 ```
+## YARA
+Yara is tool to analyze malware for example. It is based on a rule system, which are its arguments and they have boolean conditions inside them. It analyzes strings and binaries.
+
+```
+yara [rule_file] [file/dir] || basic syntax to run a yara rule
+```
