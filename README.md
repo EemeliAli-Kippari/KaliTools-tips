@@ -246,3 +246,14 @@ Yara is tool to analyze malware for example. It is based on a rule system, which
 ```
 yara [rule_file] [file/dir] || basic syntax to run a yara rule
 ```
+
+## SPLUNK
+```
+splunk.exe remove app [appname] -auth splunk-[username]:splunk-[password]|| remove an app on Windows
+```
+```
+net stop splunkd || stop splunk on Windows
+```
+```
+net start splunkd || start splunk on Windows
+```
