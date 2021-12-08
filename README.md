@@ -257,3 +257,11 @@ net stop splunkd || stop splunk on Windows
 ```
 net start splunkd || start splunk on Windows
 ```
+## USEFUL LINKS
+https://dnsdumpster.com/
+https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06
+https://www.shodan.io/
+https://excalidraw.com/
+https://opintel.net/
+https://dnstwister.report/
+https://dnstwist.it/
