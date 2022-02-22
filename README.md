@@ -257,6 +257,12 @@ net stop splunkd || stop splunk on Windows
 ```
 net start splunkd || start splunk on Windows
 ```
+
+## GHOSTSCRIPT
+repairs broken files
+```
+gs \ -o repaired.pdf \ -sDEVICE=pdfwrite \ -dPDFSETTINGS=/prepress \ corrupted.pdf || Repairs a broken pdf file
+ ```
 ## USEFUL LINKS
 https://dnsdumpster.com/
 https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06
