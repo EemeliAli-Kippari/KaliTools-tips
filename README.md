@@ -201,6 +201,11 @@ Find suid programs
 ```
 find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null || "2>/dev/null" = errors do not show
 ```
+Check your sudo rights
+```
+sudo -l
+```
+
 ## Python
 Turn a crappy reverse shell or similar into a better one
 ```
