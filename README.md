@@ -96,6 +96,10 @@ binwalk <filename> <filename> || opens files if they contain something
 steghide --info -p <filename> || display info and p for password
 steghide extract -sf tryhackme.jpeg || extracts data inside
 ```
+## STEGCRACK
+```
+stegcrack <filename> || automatically runs rockyou.txt against a file
+```
 
 ## Metasploit
 Intialize database 
