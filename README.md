@@ -26,6 +26,7 @@ echo "yourtexthere" > filename || make file
 nano filename || will open the nano text editor
 mkdir dirname
 dpkg -i [file] || dpkg is a tool to install, build, remove and manage Debian package. -i = install
+lsb_release -a || show the Ubuntu version
 ```
 Download from internet
 ```
@@ -46,6 +47,16 @@ grep "[word]" [file] || search a line in a file with the [word] in it
 Listen on port 1234 at tun0 ip
 ```
 nc -lkvnp 1234
+
+nc -vl 4444 > name_the_file_to_anything
+
+nc -n [targetIP] 4444 < /path/to/file/you/want/to/send
+```
+Send files through nc
+```
+nc -vl 4444 > name_the_file_to_anything
+
+nc -n [targetIP] 4444 < /path/to/file/you/want/to/send
 ```
 ##Nessus
 ```
