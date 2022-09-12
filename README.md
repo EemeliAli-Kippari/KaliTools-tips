@@ -32,6 +32,14 @@ Download from internet
 ```
 wget url || when downloading code from github use the "raw" page
 ```
+Different DNS and IP lookup tools
+```
+whois
+dig
+nslookup
+host
+tracert
+```
 Download/Send files from/to through SSH
 ```
 scp user@userip:/from_dir/file /to_dir || download from another user
