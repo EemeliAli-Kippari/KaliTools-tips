@@ -38,7 +38,8 @@ whois
 dig
 nslookup
 host
-tracert
+tracert/traceroute
+shodan
 ```
 Download/Send files from/to through SSH
 ```
