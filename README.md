@@ -22,7 +22,7 @@ rm || removes files
 rmdir || removes a dir
 touch filename || make file
 cat >> filename || make file
-echo "yourtexthere" > filename || make file
+echo "yourtexthere" > filename || make file with txt
 nano filename || will open the nano text editor
 mkdir dirname
 dpkg -i [file] || dpkg is a tool to install, build, remove and manage Debian package. -i = install
@@ -163,7 +163,7 @@ hashcat --username -a 0 -m 0 <hash-file> <path-to-wordlist>
 
 Show earlier cracked
 ```
-hashcat --username --show -a 0 -m 0 <hash-file> <path-to-wordlist>
+hashcat [previous command] --show
 ```  
 
 ## John the ripper
@@ -184,25 +184,31 @@ Crack FTP/SSH/login form and various other protocols
 Options
 ```
 -t number of paraller connections
--l user
+-l "user"
+-L user path
 -P password path
+-p "password"
 ```
 
 SSH
 ``` 
-hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> ssh -o<filename>
+hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> ssh -o hydra.txt
 ```
 FTP
 ```
-hydra -l user -P p<path to wordlist> ftp://<ip>
+hydra -l [username] -P <path to wordlist> ftp://<ip>
 ```
 Web login
 ```
-hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> http-post-form "/login:username=^USER^&password=^PASS^:F=<wrong psswd msg>" -V -o <filename>
+hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> http-post-form "/login:username=^USER^&password=^PASS^:F=[wrong psswd msg]" -f -V -o hydra.txt
 ```
 SQL
 ```
 hydra -L usernames.txt -P /usr/share/wordlists/rockyou.txt <ip>  mysql -s <port> -f
+```
+SMTP
+```
+hydra -l [email address] -P /path/to/wordlist.txt smtp://[IP] -v 
 ```
 More info: https://tryhackme.com/room/hydra
 
@@ -292,6 +298,25 @@ repairs broken files
 ```
 gs \ -o repaired.pdf \ -sDEVICE=pdfwrite \ -dPDFSETTINGS=/prepress \ corrupted.pdf || Repairs a broken pdf file
  ```
+ 
+## CRUNCH
+Make an offline wordlist with parameters
+
+Example:
+```
+crunch 4 4 12345asdfgh -o crunch.txt  || creates all possible combinations of 4 (max/min length) character strings with given characters
+```
+@ = lower case alpha characters
+, = upper case alpha characters
+& = numeric characters
+^ = special characters (space included)
+
+## CUPP
+Awesome tool for wordlists
+```
+python3 cupp.py -h
+```
+Install: ``` git clone https://github.com/Mebus/cupp.git ```
 ## USEFUL LINKS
 https://dnsdumpster.com/
 https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06
