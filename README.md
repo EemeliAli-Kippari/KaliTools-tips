@@ -317,6 +317,11 @@ Awesome tool for wordlists
 python3 cupp.py -h
 ```
 Install: ``` git clone https://github.com/Mebus/cupp.git ```
+
+##SHITT
+
+![kuva](https://user-images.githubusercontent.com/49709827/190904303-8c76b7e6-9ca2-4b64-bc46-0c4e44254a23.png)
+
 ## USEFUL LINKS
 https://dnsdumpster.com/
 https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06
