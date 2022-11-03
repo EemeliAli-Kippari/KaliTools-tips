@@ -31,6 +31,7 @@ lsb_release -a || show the Ubuntu version
 Download from internet
 ```
 wget url || when downloading code from github use the "raw" page
+Invoke-WebRequest -Uri 'http://IP:port/path-to-file' -OutFile 'c:\path-to-file\name-of.file' || Powerhsell command, use with python simpleHTTPserver
 ```
 Different DNS and IP lookup tools
 ```
