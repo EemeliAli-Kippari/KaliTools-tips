@@ -339,3 +339,4 @@ https://dnstwister.report/
 https://dnstwist.it/
 https://github.com/bitsadmin/wesng - WES-NG, check for exploits on the attacking machine
 https://github.com/itm4n/PrivescCheck - Check for privileges with powershell
+https://www.guballa.de/substitution-solver  -Solve subsitution ciphers
