@@ -14,7 +14,7 @@ cd +
 .. = one dir back
 - = previous dir
 ```
-files/dirs
+navigating the terminal
 ```
 mv file /destination || move around
 mv oldname newname || rename
@@ -27,6 +27,8 @@ nano filename || will open the nano text editor
 mkdir dirname
 dpkg -i [file] || dpkg is a tool to install, build, remove and manage Debian package. -i = install
 lsb_release -a || show the Ubuntu version
+ctrl + Z + bg || background a process
+fg <id> || bring a process from background to foreground with process id. You can find the id with "jobs"
 ```
 Download from internet
 ```
@@ -90,6 +92,10 @@ Good to know
 ```
 ```
 id_rsa and id_rsa.pub are default names of SSH private- and public keys
+```
+Zip a file and send it over ssh
+```
+tar cf - folder/file | ssh user@ip "cd /tmp/; tar xpf -" | sends the file to /tmp
 ```
 ## FTP
 make a connection
