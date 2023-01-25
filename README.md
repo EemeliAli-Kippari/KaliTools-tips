@@ -234,6 +234,9 @@ File search
 ```
 gobuster dir -u <url> -x php -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt -o gobuster.txt  
 ```
+Lessons learned
+Make sure you also search for hidden files (.filename) and use a big enough wordlist
+
 ## WFUZZ
 Fuzz directories, variables, file types...
 ```
