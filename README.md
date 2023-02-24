@@ -189,7 +189,10 @@ Show earlier cracked
 ```
 sudo john --show <hash-file>
 ``` 
-
+Turn a password protected id_rsa file to a crackable form
+``` 
+ssh2john id_rsa > hash.txt
+``` 
 
 ## Hydra
 Crack FTP/SSH/login form and various other protocols
@@ -355,3 +358,5 @@ https://dnstwist.it/
 https://github.com/bitsadmin/wesng - WES-NG, check for exploits on the attacking machine
 https://github.com/itm4n/PrivescCheck - Check for privileges with powershell
 https://www.guballa.de/substitution-solver  -Solve subsitution ciphers
+
+By default credentials for a web server can be stored in a ".htpasswd" file.
