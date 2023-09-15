@@ -61,6 +61,13 @@ grep "[word]" [file] || search a line in a file with the [word] in it
 -v || invert the results = show everything but the matches
 -r || search recursively
 ```
+## WIndows
+
+UAC Bypass program
+```
+https://github.com/hfiref0x/UACME
+```
+
 ## NetCat
 Listen on port 1234 at tun0 ip
 ```
